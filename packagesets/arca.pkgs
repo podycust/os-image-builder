@@ -1,0 +1,35 @@
+// Packages that are used on arca servers
+#include "core.pkgs"
+#include "network.pkgs"
+#include "cloud.pkgs"
+openssh-server
+btrfs-progs
+qemu-guest-agent
+zram-generator
+bind-utils
+git-core
+netcat-openbsd
+apache-tools
+openssl
+curl
+traefik-certs-dumper
+docker
+docker-cli
+docker-compose
+htop
+jq
+strace
+ltrace
+cloud-init
+bind-utils
+git-core
+// used by dumpcerts.service to see if certificates were renewed
+diffutils
+// Let's keep OM up to date
+system-update
+// Needed by some provider backends in cloud-init.
+// Better safe than sorry.
+dhcp-client
+// Not strictly required, but small and very useful for
+// "docker logs [tab]" etc.
+bash-completion
